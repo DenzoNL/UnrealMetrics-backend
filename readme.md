@@ -1,27 +1,31 @@
-## Laravel PHP Framework
+## What is UnrealMetrics
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+UnrealMetrics is an attempt to create a powerful web-based framework for gathering, viewing, interpreting and analysing user metrics from Unreal Engine 4-based games,
+as well as provide facilities for tweaking and tuning from within the framework.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+UnrealMetrics is based on Laravel 5 and is developed for NHTV University of Applied Sciences Breda by me as part of my Specialisation course.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## How it works
 
-## Official Documentation
+UnrealMetrics at its core provides nothing more than a RESTful API for the Unreal Engine 4 to interface with. In conjunction with my Unreal Engine 4-plugin
+that allows communication with UnrealMetrics, it is possible to collect data live from all game instances being played.
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## Goals of the project
 
-## Contributing
+1) Collect user metrics from Unreal Engine 4-based games
+2) Give designers useful tools to analyse and compare user metrics between different versions of the game
+3) Allow designers to tweak and fine tune the game by allowing the server to send new game settings to clients connected to the internet
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## Current status
 
-## Security Vulnerabilities
+Nothing but the initial commit has been done. I need to create RESTful API's for both user metrics and game settings,
+create a beautiful yet simple and powerful front-end for the viewing of user metrics. The engine plugin also needs to be updated to receive game settings.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+## Installation / How to use
 
-### License
+TODO
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+## Issues & Pull requests
+
+All bug reports and issues are welcome. Not sure yet if I'm allowed to accept pull requests before I deliver the project to university.
+Expect development to continue after delivery date. After this date all pull requests are welcome :)
