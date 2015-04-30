@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: UnrealMetrics
+        psr4_prefix: UnrealMetrics
+        src_path: app
