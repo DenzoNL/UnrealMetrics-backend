@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="PublishConfigData" serverName="UnrealMetrics" uploadOnCheckin="4b3268bf-3a5e-4fdc-ae36-300c086fa7ec">
-    <serverData>
-      <paths name="UnrealMetrics">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-    </serverData>
     <option name="myUploadOnCheckinName" value="UnrealMetrics" />
   </component>
 </project>
