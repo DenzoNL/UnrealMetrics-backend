@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4" />
+<project version="4">
+  <component name="PublishConfigData" uploadOnCheckin="e26a6de4-b737-4794-9f3b-08f21a5ad083">
+    <option name="myUploadOnCheckinName" value="UnrealMetrics" />
+  </component>
+</project>
