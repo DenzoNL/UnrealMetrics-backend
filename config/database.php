@@ -54,10 +54,10 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => env('DB_HOST', 'localhost'),
-			'database'  => env('DB_DATABASE', 'unrealmetrics'),
-			'username'  => env('DB_USERNAME', 'unrealmetrics'),
-			'password'  => env('DB_PASSWORD', 'LWuA38BSPKn63RXL'),
+			'host'      => env('DB_HOST', 'dennisbogers.nl'),
+			'database'  => env('DB_DATABASE', 'dennis_um'),
+			'username'  => env('DB_USERNAME', 'dennis_um'),
+			'password'  => env('DB_PASSWORD', 'URlaTeJfOS'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
