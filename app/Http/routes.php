@@ -16,6 +16,12 @@ Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
 ]);
+
+// Route group for API versioning
+Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function () {
+    Route::resource('game', 'GameController');
+    Route::resource('metric', 'GameController');
+});
