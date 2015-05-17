@@ -21,7 +21,6 @@ Route::controllers([
 ]);
 
 // Route group for API versioning
-Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function () {
-    Route::resource('game', 'GameController');
-    Route::resource('metric', 'GameController');
+Route::group(array('prefix' => 'api', 'middleware' => 'auth.basic'), function () {
+    Route::resource('metric', 'MetricController');
 });

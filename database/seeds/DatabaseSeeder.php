@@ -3,18 +3,29 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class DatabaseSeeder extends Seeder {
+class DatabaseSeeder extends Seeder
+{
 
-	/**
-	 * Run the database seeds.
-	 *
-	 * @return void
-	 */
-	public function run()
-	{
-		Model::unguard();
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        Model::unguard();
 
-		// $this->call('UserTableSeeder');
-	}
+        $this->call('UserTableSeeder');
+        $this->command->info('User table seeded!');
+    }
+}
 
+class UserTableSeeder extends Seeder
+{
+
+    public function run()
+    {
+        DB::table('users')->delete();
+        DB::table('users')->insert(['username' => 'Admin', 'email' => 'admin', 'password' => Hash::make('admin')]);
+    }
 }
