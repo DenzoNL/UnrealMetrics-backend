@@ -26,6 +26,6 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         DB::table('users')->delete();
-        DB::table('users')->insert(['username' => 'Admin', 'email' => 'admin', 'password' => Hash::make('admin')]);
+        DB::table('users')->insert(['name' => 'Admin', 'email' => 'admin', 'password' => Hash::make('admin')]);
     }
 }
