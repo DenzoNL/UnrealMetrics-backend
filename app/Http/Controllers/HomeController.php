@@ -1,5 +1,7 @@
 <?php namespace UnrealMetrics\Http\Controllers;
 
+use UnrealMetrics\Metric;
+
 class HomeController extends Controller {
 
 	/*
@@ -30,7 +32,8 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+        $metrics = Metric::all();
+		return view('home')->with('metrics', $metrics);
 	}
 
 }

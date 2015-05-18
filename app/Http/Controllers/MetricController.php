@@ -16,7 +16,7 @@ class MetricController extends Controller
      */
     public function index()
     {
-        return Metric::all()->toJson();
+        return Metric::all();
     }
 
     /**
