@@ -35,7 +35,9 @@ class MetricController extends Controller
      */
     public function store()
     {
-        //
+        $metric = new Metric;
+        $metric->name = Request::input('name');
+        $metric->save();
     }
 
     /**

@@ -19,6 +19,6 @@ Route::controllers([
 ]);
 
 // Route group for API versioning
-Route::group(array('prefix' => 'api', 'middleware' => 'auth.basic'), function () {
+Route::group(array('prefix' => 'api/v1', 'middleware' => 'auth.basic'), function () {
     Route::resource('metric', 'MetricController');
 });
