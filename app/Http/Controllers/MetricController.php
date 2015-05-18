@@ -2,8 +2,10 @@
 
 use UnrealMetrics\Http\Requests;
 use UnrealMetrics\Http\Controllers\Auth;
+use UnrealMetrics\Metric;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class MetricController extends Controller
 {
@@ -15,7 +17,7 @@ class MetricController extends Controller
      */
     public function index()
     {
-        return "Hi!";
+        return Metric::all();
     }
 
     /**
