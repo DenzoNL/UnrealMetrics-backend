@@ -16,7 +16,7 @@ class MetricController extends Controller
      */
     public function index()
     {
-        return Metric::all();
+        return Metric::all()->toJson();
     }
 
     /**
@@ -34,16 +34,16 @@ class MetricController extends Controller
      *
      * @return Response
      */
-    public function store()
+    public function store(Request $request)
     {
         // Simple code for now. Still needs determining game_id by api_key and saving identical metrics as a repetition
         $metric = new Metric;
-        $metric->name = Request::input('name');
-        $metric->category = Request::input('category');
-        $metric->level = Request::input('level');
-        $metric->value = Request::input('value');
-        $metric->repetitions = Request::input('repetitions');
-        $metric->game_id = Request::input('game_id');
+        $metric->name = $request->input('name');
+        $metric->category = $request->input('category');
+        $metric->level = $request->input('level');
+        $metric->value = $request->input('value');
+        $metric->repetitions = $request->input('repetitions');
+        $metric->game_id = $request->input('game_id');
         $metric->save();
     }
 
