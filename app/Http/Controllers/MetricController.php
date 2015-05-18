@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 
 class MetricController extends Controller
 {
+    public function __construct() {
+        $this->beforeFilter('csrf', ['on' => '']);
+    }
 
     /**
      * Display a listing of the resource.
