@@ -13,6 +13,7 @@
                        data-sort-order="desc"
                        data-pagination="true"
                        data-show-refresh="true"
+                       data-striped="true"
                        data-show-toggle="true"
                        data-show-columns="true"
                        data-url="/api/v1/metric"
