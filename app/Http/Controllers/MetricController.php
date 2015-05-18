@@ -5,7 +5,6 @@ use UnrealMetrics\Http\Controllers\Auth;
 use UnrealMetrics\Metric;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class MetricController extends Controller
 {
@@ -37,8 +36,14 @@ class MetricController extends Controller
      */
     public function store()
     {
+        // Simple code for now. Still needs determining game_id by api_key and saving identical metrics as a repetition
         $metric = new Metric;
         $metric->name = Request::input('name');
+        $metric->category = Request::input('category');
+        $metric->level = Request::input('level');
+        $metric->value = Request::input('value');
+        $metric->repetitions = Request::input('repetitions');
+        $metric->game_id = Request::input('game_id');
         $metric->save();
     }
 
