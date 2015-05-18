@@ -22,9 +22,10 @@
                     <thead>
                     <tr>
                         <th data-field="id">ID</th>
-                        <th data-field="name">Category</th>
+                        <th data-field="name">Name</th>
+                        <th data-field="category">Category</th>
                         <th data-field="level">Level</th>
-                        <th data-field="value">value</th>
+                        <th data-field="value">Value</th>
                         <th data-field="repetitions">Repetitions</th>
                         <th data-field="game_id">Game ID</th>
                         <th data-field="updated_at">Updated at</th>
